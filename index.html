@@ -262,7 +262,7 @@
         .timeline-item ul li { margin-bottom: 0.4rem; font-size: 0.93rem; }
 
         /* PROJECTS */
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
         .project-card {
             background: var(--card-bg); border-radius: 20px; overflow: hidden;
             box-shadow: var(--shadow); border: 1px solid var(--border); transition: all 0.3s;
@@ -350,6 +350,7 @@
 
         /* RESPONSIVE */
         @media (max-width: 968px) {
+            .projects-grid { grid-template-columns: 1fr; max-width: 100%; }
             nav ul { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--nav-bg); padding: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
             nav ul.active { display: flex; }
             .mobile-menu-btn { display: block; }
@@ -396,6 +397,7 @@
                 </div>
             </div>
             <div class="hero-text">
+                <div class="hero-badge">⚡ Open to Opportunities</div>
                 <h1>Imasha Ilamperuma</h1>
                 <p class="subtitle" id="typing-subtitle"></p>
                 <p>Passionate about innovative solutions and creating impactful technology that makes a difference — bridging IT infrastructure with data-driven intelligence.</p>
@@ -457,7 +459,7 @@
     <section id="experience">
         <h2>Professional Experience</h2>
         <div class="experience-timeline">
-             <div class="timeline-item fade-in">
+            <div class="timeline-item fade-in">
                 <h3>Engineer – Systems Support – Managed Infrastructure Services (Service Delivery and Compliances)</h3>
                 <div class="company">Millennium IT ESP</div>
                 <div class="date">📅 May 2026 – Present</div>
@@ -472,7 +474,7 @@
             <div class="timeline-item fade-in">
                 <h3>Engineer – Systems Support – Managed Infrastructure Services</h3>
                 <div class="company">Millennium IT ESP</div>
-                <div class="date">📅 May 2025 – April 2026</div>
+                <div class="date">📅 May 2025 – Present</div>
                 <p>Serving as a Systems Support Engineer for Honeylight Consulting, Australia under a Managed Services project deputed by Millennium IT ESP.</p>
                 <br>
                 <ul>
@@ -483,7 +485,7 @@
                     <li>Network Operations Centre (NOC) Support via PRTG Alert Monitoring</li>
                     <li>Daily Systems & Platform Administration (SPA) Checklist handling</li>
                     <br>
-                    <li><strong>Skills:</strong> · System, Network & Firewall Administration · IT Infrastructure & Service Management · Network Troubleshooting · PRTG Monitoring · Incident Management · HPE Aruba Networking</li>
+                    <li><strong>Skills:</strong> System, Network & Firewall Administration · IT Infrastructure & Service Management · Network Troubleshooting · PRTG Monitoring · Incident Management · HPE Aruba Networking</li>
                 </ul>
             </div>
             <div class="timeline-item fade-in">
@@ -564,12 +566,12 @@
                 </div>
             </div>
         </div>
+    </section>
 
     <!-- PROJECTS -->
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
-         <br>
             <div class="project-card fade-in">
                 <div class="project-image">🔬</div>
                 <div class="project-content">
@@ -602,7 +604,6 @@
                     </div>
                 </div>
             </div>
-            <br><br>
             <div class="project-card fade-in">
                 <div class="project-image">❄️</div>
                 <div class="project-content">
